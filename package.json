@@ -1,0 +1,28 @@
+{
+  "name": "readmetemp",
+  "version": "1.0.0",
+  "description": "readme.md generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Joshua K Bader",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "inquirer": "^6.5.2",
+    "shields": "^2.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryuku72/HomeworkW9.git"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/Ryuku72/HomeworkW9/issues"
+  },
+  "homepage": "https://github.com/Ryuku72/HomeworkW9#readme"
+}
