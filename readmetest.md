@@ -1,5 +1,5 @@
 
-[h![GitHub last commit](https://img.shields.io/github/last-commit/Ryku72/HomeWorkW9?style=for-the-badge)](https://github.com/Ryku72/HomeWorkW9)
+[h![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/HomeworkW9?style=for-the-badge)](https://github.com/Ryuku72/HomeworkW9)
 ### HomeWork Week 9: Node.Js 
 21 April 2020
 Using Node.js and a number of dependencies I have made a readme.md generator
