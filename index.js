@@ -79,9 +79,10 @@ inquirer
 
   ]).then(data => {
       const readMeInformation = `
-[![GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.folder}?style=for-the-badge)](https://github.com/${data.username}/${data.folder})
-
-### ${data.title} 
+[![GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.folder}?style=for-the-badge)]
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/${data.username}/${data.folder}]
+[![GitHub contributors](https://img.shields.io/github/contributors/${data.username}/${data.folder}?style=plastic)
+# ${data.title} 
 ${data.date}
 ${data.Introduction}
   
@@ -102,7 +103,7 @@ ${data.licenses}
 ## Contributions
 ${data.contributors}
 
-# ${data.name} // ${data.username}
+### ${data.name} // ${data.username}
 
       `;
 
