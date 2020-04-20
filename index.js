@@ -79,7 +79,7 @@ inquirer
 
   ]).then(data => {
       const readMeInformation = `
-[h![GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.folder}?style=for-the-badge)](https://github.com/${data.username}/${data.folder})
+[![GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.folder}?style=for-the-badge)](https://github.com/${data.username}/${data.folder})
 
 ### ${data.title} 
 ${data.date}
