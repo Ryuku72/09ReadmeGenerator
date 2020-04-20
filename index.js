@@ -79,9 +79,9 @@ inquirer
 
   ]).then(data => {
       const readMeInformation = `
-[![GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.folder}?style=for-the-badge)]
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/${data.username}/${data.folder}]
-[![GitHub contributors](https://img.shields.io/github/contributors/${data.username}/${data.folder}?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.folder}?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/${data.username}/${data.folder}?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/${data.username}/${data.folder}?style=for-the-badge)
 # ${data.title} 
 ${data.date}
 ${data.Introduction}
