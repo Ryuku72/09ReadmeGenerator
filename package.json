@@ -4,7 +4,9 @@
   "description": "readme.md generator",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "start": "readme",
+    "start": "node readme"
   },
   "author": "Joshua K Bader",
   "license": "MIT",

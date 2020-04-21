@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require('fs').promises;
+const markdown = require('./utils/generateMarkdown')
 
 inquirer
   .prompt([{
@@ -14,55 +15,80 @@ inquirer
     },
     {
       type: "input",
+      name: "email",
+      message: "What is your GitHub email address?",
+    },
+    {
+      type: "input",
       name: "folder",
       message: "What is the project folder name?",
     },
-  {
-    type: "input",
-    name: "email",
-    message: "What is your GitHub Email address?",
-  },
     {
       type: "input",
       name: "title",
-      message: "what is the title of your Readme.Md project?",
+      message: "What is the title of your Readme.Md project?",
+    },
+
+    {
+      type: "input",
+      name: "subheading",
+      message: "Can you provide a sub-heading for your project?",
     },
 
     {
       type: "input",
       name: "date",
-      message: "what is the date for this project",
+      message: "What is the date for this project",
     },
 
     {
       type: "input",
-      name: "Introduction",
-      message: "can you provide a short introduction summary of your project?",
+      name: "aim",
+      message: "What is the aim of your project?",
+    },
+
+    {
+      type: "input",
+      name: "concept",
+      message: "What are the key concepts used in this project project?",
     },
 
     {
       type: "checkbox",
       name: "contents",
-      message: "which following content page heading would you like to use",
-      choices: ["Installation", "Keywords", "Feedback", "Future Additions", "Additional Information", ]
+      message: "Which following content page heading would you like to include",
+      choices: ["Build_Process", "Project_Issues", "Installation", "Usuage", "Tests", "Additional_Information"]
     },
 
-    {
-      type: "input",
-      name: "installation",
-      message: "can you provide the installation procedure?",
-    },
 
     {
-      type: "input",
-      name: "use",
-      message: "can you provide usuages for your project?",
+      type: "editor",
+      name: "build",
+      message: "Please write a detailed explanation of the process you used to create your project. Please indicate which key concepts you used and how this assisted you in your task. To exit press 'ESC' and type ':', 'W', 'Q' then 'Enter'",
     },
 
     {
       type: "editor",
       name: "issues",
       message: "Please enter issues that arose with this project. To exit press 'ESC' and type ':', 'W', 'Q' then 'Enter'",
+    },
+
+    {
+      type: "input",
+      name: "install",
+      message: "Can you provide the installation procedure?",
+    },
+
+    {
+      type: "input",
+      name: "use",
+      message: "What is your project usuage?",
+    },
+
+    {
+      ype: "input",
+      name: "test",
+      message: "What tests have you conducted on your project?",
     },
 
     {
@@ -78,41 +104,15 @@ inquirer
     },
 
   ]).then(data => {
-      const readMeInformation = `
-![GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.folder}?style=for-the-badge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/${data.username}/${data.folder}?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/${data.username}/${data.folder}?style=for-the-badge)
-# ${data.title} 
-${data.date}
-${data.Introduction}
-  
-## ${data.contents}
-
-## Installation
-${data.installation}
-
-## Usuage
-${data.use}
-
-## Issues
-${data.issues}
-
-## Licenses
-${data.licenses}
-
-## Contributions
-${data.contributors}
-
-### ${data.name} // ${data.username}
-
-      `;
+      
+    const readMeInformation = markdown(data);
 
      return fs.writeFile("readmetest.md", readMeInformation);
         })
 
   .then(() => {
 
-    console.log("Readme.Md file has been generated")
+    console.log("Readmetest.Md file has been generated. \nPlease copy file and rename it to Readme.Md if satisfied")
 
   })
   .catch(error => {
@@ -123,19 +123,3 @@ ${data.contributors}
     }
     
   });
-
-  
-
-  var shields = require('shields')();
- 
-  shields('travis', {
-    repo: 'KenanY/shields'
-  });
-
-
-
-// function init() {
-
-// }
-
-// init();
