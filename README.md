@@ -16,6 +16,7 @@ Node Js, Modularizatioin, NPM, Inquirer, NPM, ES6 and Asynchronous javascript
 ## Contents
 * [Build](#Build)
 * [Issues](#Issues)
+* [Future](#Future)
 * [Installation](#Installation)
 * [Usuage](#Usuage)
 * [Tests](#Tests)
@@ -33,6 +34,18 @@ With the introduction of Node.js, Inquirer and NPM the concept of approaching a 
 
 ## Project Issues 
 Things got a little carried away after I downloaded a premade Readme.MD file that was highly customisable node.js file. Whilst this gave me a scope of how powerful Node.js can be, it also severed as another deterrent to getting my project finished. In the end I kept things simple and tried my best to just get the project finished given I was running out of time.
+
+
+<a name="Future">
+
+## Future updates
+* Use axios to connect with GitHub and grab the user's display picture then place the email address within a badge. 
+
+* Make the contents choices matter by including if statements
+
+* Break all questions into their own .js files to better control results and add some additional icons for flare
+
+* Use the badges a bit more intellegently
 
 
 <a name="Installation">
