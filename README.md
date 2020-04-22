@@ -10,17 +10,24 @@
 ### Aim
 This week we were introduced to Node.Js, NPM, Inquirer and a number of ES6 tools and functions. Using previous lessons and the new method of creating files through Node.js this class assignment was a Readme.Md generator
 
-### key Concepts for HomeworkW9
+### Key Concepts for HomeworkW9
 Node Js, Modularizatioin, NPM, Inquirer, NPM, ES6 and Asynchronous javascript
     
 ## Contents
-* [Build](#Build)
-* [Issues](#Issues)
-* [Future](#Future)
+* [Video Demonstration](#Demo)
+* [Build Process](#Build)
+* [Project Issues](#Issues)
+* [Future Updatesgit st](#Future)
 * [Installation](#Installation)
 * [Usuage](#Usuage)
 * [Tests](#Tests)
 * [Additional_Information](#Additional_Information)
+
+
+<a name="Demo">
+
+## Video Demonstration 
+A video showing the project working can be found in the following link https://www.youtube.com/watch?v=joEQlJG0Eyw
 
 
 
