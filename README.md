@@ -1,11 +1,12 @@
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/HomeworkW9?style=for-the-badge)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Ryuku72/HomeworkW9?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/Ryuku72/HomeworkW9?style=for-the-badge)
-
-# Homework Week 9: Node.JS 
-## Readme.md Generator
-22 April 2020
+![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/09ReadmeGenerator?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Ryuku72/09ReadmeGenerator?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Ryuku72/09ReadmeGenerator?style=for-the-badge)
+ 
+# Readme.md Generator
+__PROJECT09: 22 Apr 2020__
+<br>
+https://ryuku72.github.io/09ReadmeGenerator/.
 
 ### Aim
 This week we were introduced to Node.Js, NPM, Inquirer and a number of ES6 tools and functions. Using previous lessons and the new method of creating files through Node.js this class assignment was a Readme.Md generator
